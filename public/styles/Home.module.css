@@ -1,0 +1,28 @@
+/* styles/Home.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 2rem;
+  }
+  
+  .header {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .main {
+    font-size: 1.25rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  .footer {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #777;
+  }
+  

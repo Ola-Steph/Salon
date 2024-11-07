@@ -6,7 +6,12 @@ const TestimonialsSection: React.FC = () => {
     <div className="bg-white py-16 px-10">
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Header */}
-        <h2 className="text-3xl font-bold text-gray-800 mb-10">Testimonials</h2>
+        <h2
+          className="text-3xl md:text-4xl font-bold text-pink-200 mb-10"
+          style={{ fontFamily: "'Playfair Display', serif" }}
+        >
+          Testimonials
+        </h2>
         
         {/* Testimonials Columns */}
         <div className="grid md:grid-cols-3 gap-8">
@@ -40,7 +45,7 @@ const TestimonialsSection: React.FC = () => {
 
         {/* Learn More Button */}
         <div className="mt-10">
-          <button className="bg-yellow-500 text-gray-800 font-semibold py-3 px-12 rounded-lg hover:bg-yellow-400 transition-all duration-300 w-full md:w-1/3">
+          <button className="bg-pink-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-pink-600 transition-all duration-300 w-full">
             Learn More
           </button>
         </div>

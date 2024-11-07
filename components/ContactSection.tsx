@@ -12,7 +12,10 @@ const ContactSection: React.FC = () => {
       
       {/* Text Content */}
       <div className="relative max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6 text-yellow-400">
+        <h2
+          className="text-3xl md:text-4xl font-bold text-pink-200 mb-6"
+          style={{ fontFamily: "'Playfair Display', serif" }}
+        >
           Contact Us Now for the Best Local Hair Salon
         </h2>
         <p className="leading-relaxed mb-4">
@@ -22,7 +25,7 @@ const ContactSection: React.FC = () => {
           We are motivated to consistently give our clients the best quality hair care services at excellent prices. If you are looking for a talented team of hairstylists that know how to work with and care for your hair, look no further.
         </p>
         <p className="leading-relaxed">
-          Call us now at <a href="tel:7187227810" className="text-yellow-500 font-semibold">(402) 8332-0000</a> to book your appointment. We look forward to making your hair vision a reality.
+          Call us now at <a href="tel:40283320000" className="text-yellow-500 font-semibold">(402) 8332-0000</a> to book your appointment. We look forward to making your hair vision a reality.
         </p>
       </div>
     </div>

@@ -1,7 +1,7 @@
-// TestimonialsSection.tsx
 import React from 'react';
-
 /* eslint-disable react/no-unescaped-entities */
+
+
 const TestimonialsSection: React.FC = () => {
   return (
     <div className="bg-white py-16 px-10">
@@ -19,6 +19,7 @@ const TestimonialsSection: React.FC = () => {
           {/* Column 1 */}
           <div className="p-4">
             <div className="text-yellow-500 text-lg mb-4">★★★★★</div>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <p className="text-gray-700 mb-4">
               "My experience was wonderful. Carol is a great hair stylist, understood what was needed to treat my hair and the style I requested. The salon environment is very clean and professional, and I felt very comfortable. As a customer, I was seen at the time my appointment was scheduled. I highly recommend 'Just Because'."
             </p>
@@ -28,6 +29,7 @@ const TestimonialsSection: React.FC = () => {
           {/* Column 2 */}
           <div className="p-4">
             <div className="text-yellow-500 text-lg mb-4">★★★★★</div>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <p className="text-gray-700 mb-4">
               "I had a silk press today. I absolutely love my hair. Definitely going back in the future. Great Experience."
             </p>
@@ -37,6 +39,7 @@ const TestimonialsSection: React.FC = () => {
           {/* Column 3 */}
           <div className="p-4">
             <div className="text-yellow-500 text-lg mb-4">★★★★★</div>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <p className="text-gray-700 mb-4">
               "I went twice to Just Because. It is worth going to the salon coming from Queens. It is also easy for me because I work in the area. Already my natural hair feels healthy because of their natural products. I'm very satisfied with the natural products. I used the 8oil and now the spray. I look forward to my next appointment."
             </p>
@@ -54,6 +57,5 @@ const TestimonialsSection: React.FC = () => {
     </div>
   );
 };
-/* eslint-enable react/no-unescaped-entities */
 
 export default TestimonialsSection;

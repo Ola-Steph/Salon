@@ -2,6 +2,30 @@
 import React from 'react';
 
 const TestimonialsSection: React.FC = () => {
+  const testimonials = [
+    {
+      rating: '★★★★★',
+      text: `"My experience was wonderful. Carol is a great hair stylist, understood what was needed to treat my hair and the style I requested. The salon environment is very clean and professional, and I felt very comfortable. As a customer, I was seen at the time my appointment was scheduled. I highly recommend 'Just Because'."`
+        .replace(/'/g, "&apos;")
+        .replace(/"/g, "&quot;"),
+      author: '- Norma Elliott'
+    },
+    {
+      rating: '★★★★★',
+      text: `"I had a silk press today. I absolutely love my hair. Definitely going back in the future. Great Experience."`
+        .replace(/'/g, "&apos;")
+        .replace(/"/g, "&quot;"),
+      author: '- Andrea Harris'
+    },
+    {
+      rating: '★★★★★',
+      text: `"I went twice to Just Because. It is worth going to the salon coming from Queens. It is also easy for me because I work in the area. Already my natural hair feels healthy because of their natural products. I'm very satisfied with the natural products. I used the 8oil and now the spray. I look forward to my next appointment."`
+        .replace(/'/g, "&apos;")
+        .replace(/"/g, "&quot;"),
+      author: '- Cs'
+    }
+  ];
+
   return (
     <div className="bg-white py-16 px-10">
       <div className="max-w-6xl mx-auto text-center">
@@ -12,35 +36,16 @@ const TestimonialsSection: React.FC = () => {
         >
           Testimonials
         </h2>
-        
+
         {/* Testimonials Columns */}
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Column 1 */}
-          <div className="p-4">
-            <div className="text-yellow-500 text-lg mb-4">★★★★★</div>
-            <p className="text-gray-700 mb-4">
-              &quot;My experience was wonderful. Carol is a great hair stylist, understood what was needed to treat my hair and the style I requested. The salon environment is very clean and professional, and I felt very comfortable. As a customer, I was seen at the time my appointment was scheduled. I highly recommend &apos;Just Because&apos;.&quot;
-            </p>
-            <p className="font-semibold text-gray-600">- Norma Elliott</p>
-          </div>
-
-          {/* Column 2 */}
-          <div className="p-4">
-            <div className="text-yellow-500 text-lg mb-4">★★★★★</div>
-            <p className="text-gray-700 mb-4">
-              &quot;I had a silk press today. I absolutely love my hair. Definitely going back in the future. Great Experience.&quot;
-            </p>
-            <p className="font-semibold text-gray-600">- Andrea Harris</p>
-          </div>
-
-          {/* Column 3 */}
-          <div className="p-4">
-            <div className="text-yellow-500 text-lg mb-4">★★★★★</div>
-            <p className="text-gray-700 mb-4">
-              &quot;I went twice to Just Because. It is worth going to the salon coming from Queens. It is also easy for me because I work in the area. Already my natural hair feels healthy because of their natural products. I&apos;m very satisfied with the natural products. I used the 8oil and now the spray. I look forward to my next appointment.&quot;
-            </p>
-            <p className="font-semibold text-gray-600">- Cs</p>
-          </div>
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="p-4">
+              <div className="text-yellow-500 text-lg mb-4">{testimonial.rating}</div>
+              <p className="text-gray-700 mb-4" dangerouslySetInnerHTML={{ __html: testimonial.text }} />
+              <p className="font-semibold text-gray-600">{testimonial.author}</p>
+            </div>
+          ))}
         </div>
 
         {/* Learn More Button */}
